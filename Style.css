@@ -1,0 +1,165 @@
+
+body {
+    font-family: Arial, sans-serif; /* Modify font family */
+    font-size: 16px; /* Modify font size */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for header */
+header {
+    background-color: #242121; /* Modify background color */
+}
+
+
+/* Style for nav */
+nav {
+    background-color: #555; /* Modify background color */
+}
+
+/* Style for main */
+main {
+    background-color: #b2d1b2; /* Modify background color */
+    font-size: 20px; /* Modify font size */
+    color: #170b2b;
+}
+
+/* Style for footer */
+footer {
+    background-color: #4CAF50; /* Modify background color */
+}
+
+/* Style for li */
+li {
+    display: list-item; /* Modify display */
+    width: 1500px; /* Modify width */
+}
+
+/* Style for h1 */
+h1 {
+    text-align: center; /* Modify text alignment */
+    font-family: 'Georgia', serif; /* Modify font family */
+    color: #4CAF50; /* Modify color */
+}
+
+h2 {
+    background-color: #222;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #4CAF50;
+}
+
+/* Style for p */
+p {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6; /* Modify line height */
+}
+
+
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+.skip-link:focus {
+    position: static;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: solid;
+    padding: 10px;
+    color: #BC576F;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.gallery-grid img{
+    display: grid;
+    grid-template-columns: repeat( minmax(20px, 1fr));
+    border: 12px solid #080203;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    border: 3px solid #333;
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.main {
+  text-align: center
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.div {
+    color: #8F0011;
+    text-align: center;
+    width: 200px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:  50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+
+    opacity: 0.1;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.styled-image:nth-child(even) {
+    border-radius: 20px;
+}
+
+.text {
+    background-color: #CC9B4B;
+    font-size: 16px;
+    color: #CC313C;
+    padding: 16px 32px;
+}
+
+
+
+
